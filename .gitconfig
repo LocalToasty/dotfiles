@@ -1,0 +1,12 @@
+[alias]
+	st = status --short
+	ci = commit
+	co = checkout
+	ls = log --oneline
+	br = branch
+[user]
+	name = Marko van Treeck
+	email = markovantreeck@gmail.com
+[core]
+	editor = vim
+	autocrlf = input
