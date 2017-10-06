@@ -86,3 +86,8 @@ source $ZSH/oh-my-zsh.sh
 alias em="emacsclient -t"
 alias rm="trash"
 alias make="make -j4"
+alias gdb="gdb -q"
+
+if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
+    tmux attach-session -t ssh || tmux new-session -s ssh
+fi
